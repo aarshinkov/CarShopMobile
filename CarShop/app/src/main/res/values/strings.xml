@@ -1,0 +1,174 @@
+<resources>
+    <string name="app_name">CarShop</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_cars">Cars</string>
+    <string name="menu_auth_group">Login &amp; Registration</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_register">Register</string>
+    <string name="menu_logout">Logout</string>
+
+    <string name="login_header">Login</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="login_success">Welcome, %1$s!</string>
+    <string name="login_bad_credentials">Invalid email/password!</string>
+    <string name="logout_success">Logout successful!</string>
+    <string name="login_register">Don\'t have an account? Register</string>
+    <string name="login_loggingin">Logging you in…</string>
+
+    <string name="login_error_email_empty">Email must not be empty!</string>
+    <string name="login_error_email_pattern">Does not look like email</string>
+    <string name="login_error_password_empty">Password must not be empty!</string>
+    <string name="login_general_error">Error logging you in. Please try again or contact us!</string>
+
+    <string name="register_header">Registration</string>
+    <string name="register_email">Email</string>
+    <string name="register_password">Password</string>
+    <string name="register_confirm_password">Confirm password</string>
+    <string name="register_first_name">First name</string>
+    <string name="register_last_name">Last name</string>
+    <string name="register_button">Create an account</string>
+    <string name="register_success">%1$s, your account was successfully created!</string>
+    <string name="register_login">Have an account? Login</string>
+    <string name="register_registering">Creating your account…</string>
+
+    <string name="register_error_email_empty">Email must not be empty!</string>
+    <string name="register_error_password_empty">Password must not be empty!</string>
+    <string name="register_error_confirmation_password_empty">The confirmation password must not be empty!</string>
+    <string name="register_error_passwords_not_match">The two passwords must match!</string>
+    <string name="register_error_first_name_empty">First name must not be empty!</string>
+    <string name="register_general_error">An error occurred while creating your account. Please try again!</string>
+
+    <string name="cars_cars_found">Cars found:</string>
+    <string name="cars_loading">Loading cars…</string>
+    <string name="cars_added_on">Added on</string>
+    <string name="cars_add_car">Add a car</string>
+    <string name="cars_general_error">Error loading cars!</string>
+
+    <string name="car_title">Car</string>
+    <string name="car_loading">Loading car…</string>
+    <string name="car_year">Production year</string>
+    <string name="car_engine_type">Engine type</string>
+
+    <string name="car_engine_type_1">Diesel</string>
+    <string name="car_engine_type_2">Petrol</string>
+    <string name="car_engine_type_3">Methane</string>
+    <string name="car_engine_type_4">Hybrid</string>
+    <string name="car_engine_type_5">Electric</string>
+
+    <array name="car_engine_types">
+        <item>Diesel</item>
+        <item>Petrol</item>
+        <item>Methane</item>
+        <item>Hybrid</item>
+        <item>Electric</item>
+    </array>
+
+    <string name="car_horse_powers">Power</string>
+    <string name="car_horse_powers_hp">%1$d h.p.</string>
+
+    <string name="car_gearbox">Gearbox</string>
+
+    <string name="car_gearbox_1">Manual</string>
+    <string name="car_gearbox_2">Automatic</string>
+    <string name="car_gearbox_3">Semi-automatic</string>
+
+    <array name="car_gearboxes">
+        <item>Manual</item>
+        <item>Automatic</item>
+        <item>Semi-automatic</item>
+    </array>
+
+    <string name="car_category">Category</string>
+
+    <string name="car_category_1">Van</string>
+    <string name="car_category_2">Jeep</string>
+    <string name="car_category_3">Convertible</string>
+    <string name="car_category_4">Combi</string>
+    <string name="car_category_5">Coupe</string>
+    <string name="car_category_6">Minivan</string>
+    <string name="car_category_7">Pickup</string>
+    <string name="car_category_8">Sedan</string>
+    <string name="car_category_9">Stretch limo</string>
+    <string name="car_category_10">Hatchback</string>
+
+    <array name="car_categories">
+        <item>Van</item>
+        <item>Jeep</item>
+        <item>Convertible</item>
+        <item>Combi</item>
+        <item>Coupe</item>
+        <item>Minivan</item>
+        <item>Pickup</item>
+        <item>Sedan</item>
+        <item>Stretch limo</item>
+        <item>Hatchback</item>
+    </array>
+
+    <string name="car_mileage">Mileage</string>
+
+    <string name="car_mileage_unit_km">km.</string>
+    <string name="car_mileage_unit_m">miles</string>
+
+    <string name="car_color">Color</string>
+
+    <string name="car_action_edit">Edit</string>
+    <string name="car_action_delete">Delete</string>
+    <string name="car_check_changes">Check for changes</string>
+
+    <string name="car_check_changes_checking">Checking car information…</string>
+
+    <string name="car_check_changes_no">No changes detected for this car!</string>
+    <string name="car_check_changes_yes_title">Car changes detected</string>
+    <string name="car_check_changes_yes_message">Since there are changes for this car, you could perform these set of operations.</string>
+
+    <string name="car_check_changes_update_latest">Update data with latest</string>
+    <string name="car_check_changes_update_latest_success">Car data updated with latest changes</string>
+
+    <string name="car_check_changes_discard">Discard changes</string>
+    <string name="car_check_changes_discard_success">Changes were discarded and reverted to current state</string>
+
+    <string name="car_check_changes_duplicate">Duplicate records</string>
+    <string name="car_check_changes_duplicate_success">Record is duplicated</string>
+
+    <string name="car_general_error">Error loading car!</string>
+
+    <string name="car_create_title">Create a car</string>
+
+    <string name="car_create_brand">Brand</string>
+    <string name="car_create_model">Model</string>
+    <string name="car_create_price">Price</string>
+    <string name="car_create_year">Production year</string>
+    <string name="car_create_engine_type">Engine type</string>
+    <string name="car_create_horse_powers">Power (h.p.)</string>
+    <string name="car_create_gearbox">Gearbox</string>
+    <string name="car_create_category">Category</string>
+    <string name="car_create_mileage">Mileage</string>
+    <string name="car_create_color">Color</string>
+
+    <string name="car_create_button">Create car</string>
+    <string name="car_create_creating_car">Creating a car…</string>
+    <string name="car_create_success">Car created successfully!</string>
+    <string name="car_create_error">Error creating car! Please, try again.</string>
+
+    <string name="car_create_error_brand_empty">Brand must not be empty!</string>
+    <string name="car_create_error_model_empty">Model must not be empty!</string>
+    <string name="car_create_error_price_empty">Price must not be empty!</string>
+    <string name="car_create_error_year_empty">Production year must not be empty!</string>
+    <string name="car_create_error_year_future">Production year cannot be after year %1$d!</string>
+    <string name="car_create_error_horse_powers_empty">Power must not be empty!</string>
+    <string name="car_create_error_mileage_empty">Mileage must not be empty!</string>
+    <string name="car_create_error_color_empty">Color must not be empty!</string>
+
+    <string name="title_activity_root">RootActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="currency_bgn">lv.</string>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.CarsFragment">
+
+    <SearchView
+        android:id="@+id/carsSV"
+         android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/carsCountLabelTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/cars_cars_found"
+        app:layout_constraintStart_toStartOf="@+id/carsLeftGuide"
+        app:layout_constraintTop_toBottomOf="@+id/carsSV" />
+
+    <TextView
+        android:id="@+id/carsCountTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/carsCountLabelTV"
+        app:layout_constraintTop_toBottomOf="@+id/carsSV" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cars"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/carsButtonsBarrier"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carsCountLabelTV" >
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/carsButtonsBarrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="carsAddCarBtn"
+        tools:layout_editor_absoluteY="83dp" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/carsCheckBtn"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Check for changes"-->
+    <!--        android:textSize="10sp"-->
+    <!--        app:icon="@drawable/ic_refresh"-->
+    <!--        app:iconSize="16sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="@+id/carsLeftGuide" />-->
+
+    <Button
+        android:id="@+id/carsAddCarBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cars_add_car"
+        android:textSize="11sp"
+        app:icon="@drawable/ic_plus"
+        app:iconSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/carsRightGuide" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/carsLeftGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/guide_left_margin" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/carsRightGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/guide_right_margin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.CarCreateActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/carCreateBrandTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:labelFor="@+id/carCreateBrandET"
+            android:text="@string/car_create_brand"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/carCreateBrandET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateBrandTV" />
+
+        <TextView
+            android:id="@+id/carCreateModelTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:labelFor="@+id/carCreateModelET"
+            android:text="@string/car_create_model"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateBrandET" />
+
+        <EditText
+            android:id="@+id/carCreateModelET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateModelTV" />
+
+        <TextView
+            android:id="@+id/carCreatePriceTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:labelFor="@+id/carCreatePriceET"
+            android:text="@string/car_create_price"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateModelET" />
+
+        <EditText
+            android:id="@+id/carCreatePriceET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreatePriceTV" />
+
+        <TextView
+            android:id="@+id/carCreateYearTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:labelFor="@+id/carCreateYearET"
+            android:text="@string/car_create_year"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreatePriceET" />
+
+        <EditText
+            android:id="@+id/carCreateYearET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateYearTV" />
+
+        <TextView
+            android:id="@+id/carCreateEngineTypeTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/car_create_engine_type"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateYearET" />
+
+        <Spinner
+            android:id="@+id/carCreateEngineTypeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/car_engine_types"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateEngineTypeTV" />
+
+        <TextView
+            android:id="@+id/carCreateHorsePowersTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:labelFor="@+id/carCreateHorsePowersET"
+            android:text="@string/car_create_horse_powers"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateEngineTypeSpinner" />
+
+        <EditText
+            android:id="@+id/carCreateHorsePowersET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateHorsePowersTV" />
+
+        <TextView
+            android:id="@+id/carCreateGearboxTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/car_create_gearbox"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateHorsePowersET" />
+
+        <Spinner
+            android:id="@+id/carCreateGearboxSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/car_gearboxes"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateGearboxTV" />
+
+        <TextView
+            android:id="@+id/carCreateCategoryTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/car_create_category"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateGearboxSpinner" />
+
+        <Spinner
+            android:id="@+id/carCreateCategorySpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:entries="@array/car_categories"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateCategoryTV" />
+
+        <TextView
+            android:id="@+id/carCreateMileageTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:labelFor="@+id/carCreateMileageET"
+            android:text="@string/car_create_mileage"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateCategorySpinner" />
+
+        <EditText
+            android:id="@+id/carCreateMileageET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateMileageTV" />
+
+        <TextView
+            android:id="@+id/carCreateColorTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="16dp"
+            android:labelFor="@+id/carCreateColorET"
+            android:text="@string/car_create_color"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateMileageET" />
+
+        <EditText
+            android:id="@+id/carCreateColorET"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateColorTV" />
+
+        <Button
+            android:id="@+id/carCreateBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/primary"
+            android:text="@string/car_create_button"
+            app:layout_constraintEnd_toStartOf="@+id/carCreateRightGuide"
+            app:layout_constraintStart_toStartOf="@+id/carCreateLeftGuide"
+            app:layout_constraintTop_toBottomOf="@+id/carCreateColorET" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/carCreateLeftGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/guide_left_margin" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/carCreateCenterGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/carCreateRightGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="@dimen/guide_right_margin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

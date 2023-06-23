@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_cars">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.vasil.carshop.fragments.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_cars"
+        android:name="com.vasil.carshop.fragments.CarsFragment"
+        android:label="@string/menu_cars"
+        tools:layout="@layout/fragment_cars" />
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.vasil.carshop.fragments.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/nav_registration"
+        android:name="com.vasil.carshop.fragments.RegisterFragment"
+        android:label="@string/menu_register"
+        tools:layout="@layout/fragment_register" />
+</navigation>

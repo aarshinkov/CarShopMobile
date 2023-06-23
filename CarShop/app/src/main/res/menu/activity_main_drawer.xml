@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+<!--        <item-->
+<!--            android:id="@+id/nav_home"-->
+<!--            android:icon="@drawable/ic_menu_home"-->
+<!--            android:title="@string/menu_home" />-->
+
+        <item
+            android:id="@+id/nav_cars"
+            android:icon="@drawable/ic_menu_car"
+            android:title="@string/menu_cars" />
+
+        <item
+            android:id="@+id/nav_login_group"
+            android:title="@string/menu_auth_group">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_login"
+                        android:icon="@drawable/ic_menu_login"
+                        android:title="@string/menu_login" />
+                    <item
+                        android:id="@+id/nav_registration"
+                        android:icon="@drawable/ic_menu_register"
+                        android:title="@string/menu_register" />
+                </group>
+            </menu>
+        </item>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_login"
+            android:title="@string/menu_logout" />
+    </group>
+</menu>
